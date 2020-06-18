@@ -21,7 +21,7 @@
         {
             this.check = new Timer(interval);
             this.check.Elapsed += this.CheckDate;
-            this.check.Enabled = true;
+            this.check.Enabled = true;  // Лучше вызвать метод Start().
             this.Remind += this.TurnOffCheck;
         }
         
@@ -38,19 +38,20 @@
         /// <summary>
         /// Gets or sets ReminderDate
         /// </summary>
-        public DateTime ReminderDate { get; set; }
+        public DateTime ReminderDate { get; set; }  // Было бы не плохо проверить, что напоминание устанавливается до окончания события.
 
         /// <summary>
-        /// dsdsds sdsdsd
+        /// dsdsds sdsdsd // Что?
         /// </summary>
         /// <param name="source">The sourse</param>
         /// <param name="e">The 2ns argument</param>
         public void CheckDate(object source, ElapsedEventArgs e)
         {
-            string now = (DateTime.Now).ToString("g");
-            if (now == (this.ReminderDate).ToString("g"))
+            string now = (DateTime.Now).ToString("g");  // Здесь StyleCop ругается на лишние скобки.
+            if (now == (this.ReminderDate).ToString("g")) // И тут тоже.
             {
-                this.Remind.Invoke();
+                this.Remind.Invoke(); // Ошибка, но об этом вы могли ещё не знать. Скажу на будущее.
+                                      // Нужна проверка на null. Либо в if this.Remind != null, либо this.Remind?.Invoke();
             }
         }
 
@@ -60,7 +61,7 @@
         public void TurnOffCheck()
         {
             Console.WriteLine($"{this.StartDate} у вас встреча, напоминание отключенно");
-            this.check.Enabled = false;
+            this.check.Enabled = false; // Лучше использовать метод Stop().
         }
     }
 }
