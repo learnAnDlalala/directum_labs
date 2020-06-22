@@ -13,9 +13,11 @@
         /// <param name="args">Some text</param>
         public static void Main(string[] args)
         {
-            MeetingWithReminder test = new MeetingWithReminder();
-            test.ReminderDate = DateTime.Now.AddMinutes(+2);
-            Console.WriteLine();
+            var test = new MeetingWithOutEnd();
+            test.StartDate = DateTime.Now;
+           test.EndDate = DateTime.Now.AddHours(3);
+         
+            Console.WriteLine(test.Duration);
             Console.ReadKey();
         }
     }

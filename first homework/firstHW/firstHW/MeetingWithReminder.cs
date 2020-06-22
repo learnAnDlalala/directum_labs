@@ -47,6 +47,7 @@
         /// <param name="e">The 2ns argument</param>
         public void CheckDate(object source, ElapsedEventArgs e)
         {
+            
             string now = (DateTime.Now).ToString("g");  // Здесь StyleCop ругается на лишние скобки.
             if (now == (this.ReminderDate).ToString("g")) // И тут тоже.
             {
