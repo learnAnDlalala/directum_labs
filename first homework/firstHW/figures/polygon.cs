@@ -1,5 +1,6 @@
 ﻿using System;
 
+// Название файла с большой буквы и вынести классы в отдельные файлы.
 
 namespace figures
 {
@@ -41,7 +42,7 @@ namespace figures
         }
 
 
-        public Square(double _x, double _y, double _a)
+        public Square(double _x, double _y, double _a)  // Откуда такая любовь к подчёркиваниям. Лучше обойтись без этого.
             : base(_x, _y)
         {
             this.sideA = _a;
@@ -51,7 +52,7 @@ namespace figures
     /// <summary>
     /// Rectangle
     /// </summary>
-    public class Rectangle : Square
+    public class Rectangle : Square // Почему прямоугольник наследник квадрата, ведь квадрат - частный случай прямоугольника.
     {
         /// <summary>
         /// Second side of rectangle
@@ -92,7 +93,7 @@ namespace figures
     /// <summary>
     /// class Triangle
     /// </summary>
-    public class Triangle : Rectangle
+    public class Triangle : Rectangle // Треугольник наследуется от прямоугольника? Как это?
     {
         /// <summary>
         /// 3d side

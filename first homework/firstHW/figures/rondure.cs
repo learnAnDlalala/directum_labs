@@ -13,7 +13,7 @@ namespace figures
         /// <summary>
         /// Radius of circle
         /// </summary>
-        private double radius;
+        private double radius;  // Студия делает это свойство серым и предлагает воспользоваться автосвойством. Лучше так и поступить.
 
         /// <summary>
         /// Get or Set value of radius
@@ -21,14 +21,14 @@ namespace figures
         public double Radius
         {
             get => this.radius;
-            set => this.radius = value;
+            set => this.radius = value; // Можно убрать set. Объекты лучше делать неизменяемыми.
         }
 
         /// <summary>
         /// Area of Circle = 0
         /// </summary>
         /// <returns> message about Area </returns>
-        public new string Area()
+        public new string Area()  // Возвращать string - плохой вариант. Лучше всё же вернуть 0.
         {
             return "Площадь отсутствует";
         }
