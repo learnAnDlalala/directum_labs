@@ -1,13 +1,20 @@
-﻿using System;
-
-namespace figures
+﻿namespace Figures
 {
-    class Program
+    using System;
+
+    /// <summary>
+    /// Start class
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Entry point
+        /// </summary>
+        /// <param name="args">can be empty</param>
+        public static void Main(string[] args)
         {
-            Circle test1 = new Circle(0,0,15);
-            Console.WriteLine(test1.Length());
+            Square test1 = new Square(1, 1, 3);
+            Console.WriteLine(test1.GetArea());
         }
     }
 }

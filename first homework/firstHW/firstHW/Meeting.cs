@@ -28,6 +28,6 @@ namespace FirstHW
     public class MeetingWithOutEnd : Meeting
     {
         public new DateTime? EndDate { get; set; }
-        public new TimeSpan? Duration => this.EndDate == null ? null : this.EndDate - this.StartDate;
+        public new TimeSpan? Duration => this.EndDate == null ? (TimeSpan?)null : this.EndDate.Value.Subtract(this.StartDate);
     }
 }

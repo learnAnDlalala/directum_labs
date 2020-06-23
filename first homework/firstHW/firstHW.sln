@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "firstHW", "firstHW\firstHW.csproj", "{8CF63631-0C1E-40EC-A065-2A62043EA713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "firstHW", "firstHW\firstHW.csproj", "{8CF63631-0C1E-40EC-A065-2A62043EA713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "figures", "figures\figures.csproj", "{231DD957-1150-4F1E-B425-4A6C69073A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "figures", "figures\figures.csproj", "{231DD957-1150-4F1E-B425-4A6C69073A2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

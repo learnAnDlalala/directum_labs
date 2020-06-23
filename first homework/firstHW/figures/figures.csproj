@@ -5,4 +5,15 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Update="Circle.cs">
+        <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
+        <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      </Compile>
+      <Compile Update="Shape.cs">
+        <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
+        <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      </Compile>
+    </ItemGroup>
+
 </Project>
