@@ -21,7 +21,7 @@
         {
             this.check = new Timer(interval);
             this.check.Elapsed += this.CheckDate;
-            this.check.Enabled = true;  // Лучше вызвать метод Start().
+            this.check.Enabled = true; 
             this.Remind += this.TurnOffCheck;
         }
         
@@ -48,11 +48,10 @@
         public void CheckDate(object source, ElapsedEventArgs e)
         {
             
-            string now = (DateTime.Now).ToString("g");  // Здесь StyleCop ругается на лишние скобки.
-            if (now == (this.ReminderDate).ToString("g")) // И тут тоже.
+            string now = DateTime.Now.ToString("g");  
+            if (now == this.ReminderDate.ToString("g"))
             {
-                this.Remind.Invoke(); // Ошибка, но об этом вы могли ещё не знать. Скажу на будущее.
-                                      // Нужна проверка на null. Либо в if this.Remind != null, либо this.Remind?.Invoke();
+                this.Remind?.Invoke(); 
             }
         }
 

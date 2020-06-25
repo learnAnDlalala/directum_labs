@@ -13,12 +13,7 @@
         /// <param name="args">Some text</param>
         public static void Main(string[] args)
         {
-            var test = new MeetingWithOutEnd();
-            test.StartDate = DateTime.Now;
-           test.EndDate = DateTime.Now.AddHours(3);
-         
-            Console.WriteLine(test.Duration);
-            Console.ReadKey();
+            
         }
     }
 }

@@ -25,9 +25,4 @@ namespace FirstHW
         public virtual TimeSpan Duration => this.EndDate.Subtract(this.StartDate);
     }
 
-    public class MeetingWithOutEnd : Meeting
-    {
-        public new DateTime? EndDate { get; set; }
-        public new TimeSpan? Duration => this.EndDate == null ? (TimeSpan?)null : this.EndDate.Value.Subtract(this.StartDate);
-    }
 }
