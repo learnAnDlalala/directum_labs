@@ -9,7 +9,7 @@
     /// <summary>
     /// Вспомогательный класс
     /// </summary>
-    public static class Utils
+    public static class Utils // 1 класс = 1 файл.
     {
         /// <summary>
         /// Получение Description
@@ -19,8 +19,8 @@
         public static string GetDescription(this Enum value)
         {
             var field = value.GetType().GetField(value.ToString());
-            var atribute = field.GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return atribute.Length == 0 ? value.ToString() : (atribute[0] as DescriptionAttribute).Description;
+            var attribute = field.GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attribute.Length == 0 ? value.ToString() : (attribute[0] as DescriptionAttribute).Description;
         }
     }
 
