@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
+    using System.Text;  // Лучше убирать неиспользуемые пространства имён (Ctrl R+G). И не только тут.
 
     /// <summary>
     /// Class Square 

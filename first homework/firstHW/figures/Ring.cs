@@ -34,7 +34,7 @@
         /// Area of Ring
         /// </summary>
         /// <returns>Area double</returns>
-        public new double GetArea()
+        public new double GetArea() // override
         {
             return (Math.PI * Math.Pow(this.Radius, 2)) - (Math.PI * Math.Pow(this.Radius - this.Thickness, 2));
         }

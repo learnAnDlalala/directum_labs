@@ -24,7 +24,7 @@
         /// Area of Round
         /// </summary>
         /// <returns>Area double</returns>
-        public new double GetArea()
+        public new double GetArea()   // Должен быть override
         {
             return Math.PI * Math.Pow(this.Radius, 2);
         }
