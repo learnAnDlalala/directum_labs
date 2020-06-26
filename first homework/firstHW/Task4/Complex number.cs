@@ -46,9 +46,9 @@
         /// <returns>результат сравнения</returns>
         public int CompareTo([AllowNull] Complex number)
         {
-            if (this.AbsoluteValue > number.AbsoluteValue)
+            if (this.AbsoluteValue > number.AbsoluteValue)  // Надо бы добавить проверку на null.
             {
-                return 1;
+                return 1;   // Можно проще. this.AbsoluteValue.CompareTo(number.AbsoluteValue);
             }
             else if (this.AbsoluteValue < number.AbsoluteValue)
             {

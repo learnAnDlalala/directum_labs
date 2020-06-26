@@ -52,7 +52,7 @@
         /// <returns>true of false</returns>
         public override bool Equals(object obj)
         {
-            return (bool)(this.Value == (obj as StringValue).Value);
-        }
+            return (bool)(this.Value == (obj as StringValue).Value);  // Если obj null или не типа StringValue, то будет исключение NRE.
+    }
     }
 }
