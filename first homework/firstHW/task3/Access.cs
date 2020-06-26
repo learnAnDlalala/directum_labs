@@ -16,8 +16,8 @@
         public static void ShowRights(AccessRights rights)
         {
             byte count = (byte)rights;
-            if (count >= 64)
-            {
+            if (count >= 64)  // Магическое число 64. Лучше сравнить rights.HasFlag(AccessRights.AccessDenied)
+      {
                 Console.WriteLine((AccessRights)64);
                 return;
             }
