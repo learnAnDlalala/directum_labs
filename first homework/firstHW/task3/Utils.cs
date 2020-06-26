@@ -3,8 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.Data;
     using System.Text;
-    
+
     /// <summary>
     /// Вспомогательный класс
     /// </summary>
@@ -15,7 +16,7 @@
         /// </summary>
         /// <param name="value">Data type</param>
         /// <returns>string Description</returns>
-        public static string GetDescription(this Enum value)
+        public static string Description (this Enum value)
         {
             var field = value.GetType().GetField(value.ToString());
             var attribute = field.GetCustomAttributes(typeof(DescriptionAttribute), false);

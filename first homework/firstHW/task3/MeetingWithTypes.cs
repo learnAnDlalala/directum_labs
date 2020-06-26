@@ -5,7 +5,7 @@
     using System.ComponentModel;
     using System.Text;    
     using FirstHW;
-
+    
     /// <summary>
     /// Тип возможных встреч
     /// </summary>
@@ -49,6 +49,7 @@
         public string GetTypeDescription()
         {
             return this.DateType.GetDescription();
+             
         }
     }
 }

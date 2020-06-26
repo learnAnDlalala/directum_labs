@@ -8,7 +8,7 @@
     /// <summary>
     /// Класс создания строки DataSet
     /// </summary>
-    public static partial class DataExtension // Название класса не совпадает с именем файла.
+    public static partial class DataExtension 
   {
         /// <summary>
         /// Создание строки из DataSet

@@ -8,7 +8,7 @@
     /// <summary>
     /// Логгер - класс для ведения логов.
     /// </summary>
-    public class Logger : IDisposable // Название класса не совпадает с именем файла.
+    public class Logger : IDisposable 
     {
         /// <summary>
         /// Log file.
