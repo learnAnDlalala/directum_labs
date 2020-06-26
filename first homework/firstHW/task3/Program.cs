@@ -67,8 +67,8 @@
             Console.WriteLine(or.GetDataSet("foo", "bbaa"));
 
             AccessRightsList.ShowRights(AccessRights.Ratify | AccessRights.Delete | AccessRights.Add | AccessRights.Run | AccessRights.View);
-            Race(10000);
-            ShowFormats();
+            //Race(10000);
+            //ShowFormats();
         }
 
         /// <summary>
