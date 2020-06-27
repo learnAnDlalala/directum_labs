@@ -8,7 +8,7 @@
     /// Class String Value
     /// </summary>
     public class StringValue
-    {         
+    {
         /// <summary>
         /// Class constructor
         /// </summary>
@@ -52,7 +52,11 @@
         /// <returns>true of false</returns>
         public override bool Equals(object obj)
         {
-            return (bool)(this.Value == (obj as StringValue).Value);  // Если obj null или не типа StringValue, то будет исключение NRE.
-    }
+            if (obj is StringValue stringValue)
+            {
+                return (this.Value == stringValue.Value);
+            }
+            return false;
+        }
     }
 }

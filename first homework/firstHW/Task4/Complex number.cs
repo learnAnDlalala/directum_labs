@@ -9,7 +9,7 @@
     /// Класс Комплексного числа
     /// </summary>
     public class Complex : IComparable<Complex>
-    {        
+    {
         /// <summary>
         /// Конструктор класса Complex
         /// </summary>
@@ -46,16 +46,12 @@
         /// <returns>результат сравнения</returns>
         public int CompareTo([AllowNull] Complex number)
         {
-            if (this.AbsoluteValue > number.AbsoluteValue)  // Надо бы добавить проверку на null.
+            if (number != null)
             {
-                return 1;   // Можно проще. this.AbsoluteValue.CompareTo(number.AbsoluteValue);
-            }
-            else if (this.AbsoluteValue < number.AbsoluteValue)
-            {
-                return -1;
+                this.AbsoluteValue.CompareTo(number.AbsoluteValue);
             }
 
-            return 0;
+            return 1;
         }
     }
 }

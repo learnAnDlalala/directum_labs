@@ -48,7 +48,7 @@
         /// <returns>Description string</returns>
         public string GetTypeDescription()
         {
-            return this.DateType.GetDescription();
+            return this.DateType.Description();
              
         }
     }
