@@ -17,7 +17,7 @@
         public MainWindow()
         {
             this.InitializeComponent();
-            SetContentInRTB(@"D:\direction\q2.rtf.gz", this.textBox1);
+            SetContentInRTB(@"D:\direction\q2.rtf.gz", this.textBox1);  // То же что и с логом.
         }
 
         /// <summary>
