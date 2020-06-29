@@ -1,8 +1,6 @@
 ﻿namespace Figures
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     /// <summary>
     /// Class Round = Circle with Area

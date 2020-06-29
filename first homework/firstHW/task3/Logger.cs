@@ -1,9 +1,7 @@
 ﻿namespace Task3
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
-    using System.Text;
 
     /// <summary>
     /// Логгер - класс для ведения логов.

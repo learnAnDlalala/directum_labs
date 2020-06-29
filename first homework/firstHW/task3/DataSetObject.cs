@@ -1,15 +1,12 @@
 ﻿namespace Task3
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
     using System.Data;
-    using System.Text;
-        
+
     /// <summary>
     /// Класс для формирование DataSet
     /// </summary>
-    public class Class2
+    public class DataSetObject
     {
         /// <summary>
         /// Создание DataSet

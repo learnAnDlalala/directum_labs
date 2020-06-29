@@ -1,8 +1,6 @@
 ﻿namespace Task3
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     /// <summary>
     /// Класс для вызова прав пользователя
@@ -16,7 +14,7 @@
         public static void ShowRights(AccessRights rights)
         {
             byte count = (byte)rights;
-            if (count >= 64)  // Магическое число 64. Лучше сравнить rights.HasFlag(AccessRights.AccessDenied)
+            if (rights.HasFlag(AccessRights.AccessDenied))
       {
                 Console.WriteLine((AccessRights)64);
                 return;

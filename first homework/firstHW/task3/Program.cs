@@ -62,7 +62,7 @@
         /// <param name="args">can be empty</param>
        public static void Main(string[] args)
         {
-            Class2 tests = new Class2();
+            DataSetObject tests = new DataSetObject();
             DataSet or = tests.Create();
             Console.WriteLine(or.GetDataSet("foo", "bbaa"));
 

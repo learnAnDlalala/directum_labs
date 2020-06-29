@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\firstHW\firstHW.csproj" />
+    <ProjectReference Include="..\firstHW\2ndLecture.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Class2.cs">
+    <Compile Update="DataSetObject.cs">
       <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>

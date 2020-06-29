@@ -1,9 +1,7 @@
 ﻿namespace Task3
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using FirstHW;
+    using System;
 
     /// <summary>
     /// Встреча без окончания

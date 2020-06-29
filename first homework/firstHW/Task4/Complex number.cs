@@ -1,9 +1,7 @@
 ﻿namespace Task4
 {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
-    using System.Text;
 
     /// <summary>
     /// Класс Комплексного числа

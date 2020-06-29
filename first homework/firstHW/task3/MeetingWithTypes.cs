@@ -1,11 +1,8 @@
 ﻿namespace Task3
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Text;    
     using FirstHW;
-    
+    using System.ComponentModel;
+
     /// <summary>
     /// Тип возможных встреч
     /// </summary>

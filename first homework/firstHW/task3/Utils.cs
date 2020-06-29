@@ -1,10 +1,7 @@
 ﻿namespace Task3
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel;
-    using System.Data;
-    using System.Text;
 
     /// <summary>
     /// Вспомогательный класс

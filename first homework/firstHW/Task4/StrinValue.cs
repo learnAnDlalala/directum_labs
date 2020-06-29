@@ -1,9 +1,5 @@
 ﻿namespace Task4
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     /// <summary>
     /// Class String Value
     /// </summary>

@@ -1,9 +1,5 @@
 ﻿namespace Figures
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-
     /// <summary>
     /// Rectangle class
     /// </summary>

@@ -1,13 +1,12 @@
 ﻿namespace Task4
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
 
     /// <summary>
     /// main class
     /// </summary>
-   public class Program
+    public class Program
     {
         /// <summary>
         /// Entry point
