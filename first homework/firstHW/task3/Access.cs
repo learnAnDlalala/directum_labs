@@ -5,7 +5,7 @@
     /// <summary>
     /// Класс для вызова прав пользователя
     /// </summary>
-    public static class AccessRightsList
+    public static class AccessRightsList    // Имя класса не совпадает с именем файла.
     {
         /// <summary>
         /// Показывает права пользователя.
@@ -15,7 +15,7 @@
         {
             byte count = (byte)rights;
             if (rights.HasFlag(AccessRights.AccessDenied))
-      {
+            {
                 Console.WriteLine((AccessRights)64);
                 return;
             }

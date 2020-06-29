@@ -9,7 +9,7 @@
     /// Тип прав.
     /// </summary>
     [Flags, Serializable]
-    public enum AccessRights : byte
+    public enum AccessRights : byte // Лучше было бы вынести в отдельный файл.
     {
         /// <summary>
         /// Права на просмотр.
