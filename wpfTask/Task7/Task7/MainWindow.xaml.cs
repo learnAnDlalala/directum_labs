@@ -1,5 +1,6 @@
 ﻿namespace Task7
 {
+    using System;
     using System.IO;
     using System.IO.Compression;
     using System.Windows;
@@ -17,7 +18,7 @@
         public MainWindow()
         {
             this.InitializeComponent();
-            SetContentInRTB(@"D:\direction\q2.rtf.gz", this.textBox1);  // То же что и с логом.
+            SetContentInRTB(@".\q2.rtf.gz", this.textBox1);
         }
 
         /// <summary>
@@ -27,15 +28,26 @@
         /// <param name="textBox">current richtexbox</param>
         public static void SetContentInRTB(string filepath, RichTextBox textBox)
         {
-            FileInfo file = new FileInfo(filepath);
-            if (file.Exists)
+            try
             {
-                using (FileStream compressedFile = new FileStream(filepath, FileMode.Open))
-                using (GZipStream decompreseedFile = new GZipStream(compressedFile, CompressionMode.Decompress, true))
+                FileInfo file = new FileInfo(filepath);
+                if (file.Exists)
                 {
-                    TextRange content = new TextRange(textBox.Document.ContentStart, textBox.Document.ContentEnd);
-                    content.Load(decompreseedFile, DataFormats.Rtf);
+                    using (FileStream compressedFile = new FileStream(filepath, FileMode.Open))
+                    using (GZipStream decompreseedFile = new GZipStream(compressedFile, CompressionMode.Decompress, true))
+                    {
+                        TextRange content = new TextRange(textBox.Document.ContentStart, textBox.Document.ContentEnd);
+                        content.Load(decompreseedFile, DataFormats.Rtf);
+                    }
                 }
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                throw new LoadFileException(ex.Message, ex);
+            }
+            catch (FileNotFoundException ex)
+            {
+                throw new LoadFileException(ex.Message, ex);
             }
         }
     }

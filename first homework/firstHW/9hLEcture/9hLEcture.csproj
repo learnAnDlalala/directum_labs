@@ -3,12 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_9hLEcture</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Update="ClientConnectionLog.log">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 
 </Project>

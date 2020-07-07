@@ -1,0 +1,5 @@
+String 1 some text
+string 2 some other text
+string 3 23232 sone numbers
+string 4 $#@@???!!!
+string 5 ерли монинг

@@ -3,7 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_11hLecture</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\8thLecture\8thLecture.csproj" />
+    <ProjectReference Include="..\Task5\6h lecture.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="ClientConnectionLog.log">

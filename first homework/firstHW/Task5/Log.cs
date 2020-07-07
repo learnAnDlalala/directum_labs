@@ -24,7 +24,7 @@
         /// <param name="startDate">начальная дата</param>
         /// <param name="endDate">конечная дата</param>
         /// <returns>count кол-во логов</returns>
-        public int GetCountLogs(DateTime startDate, DateTime endDate)
+        public virtual int GetCountLogs(DateTime startDate, DateTime endDate)
         {
             int count = 0;
             string line;

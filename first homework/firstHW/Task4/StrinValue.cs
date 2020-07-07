@@ -50,8 +50,9 @@
         {
             if (obj is StringValue stringValue)
             {
-                return (this.Value == stringValue.Value); // StyleCop.
+                return this.Value == stringValue.Value;
             }
+
             return false;
         }
     }
