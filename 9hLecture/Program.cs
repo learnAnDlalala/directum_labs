@@ -12,8 +12,8 @@
         /// Entry Point
         /// </summary>
         /// <param name="args">can be empty</param>
-        static void Main(string[] args)
-        {
+        static void Main(string[] args)                       // STYLECOP.
+        {                                                     // Не компилируется. Ругается на содержимое папки 9hLecture в проекте.
             Console.WriteLine("Hello World!");
             MyTestClass alltest = new MyTestClass(5);
             alltest.Name = "fdfdf";
