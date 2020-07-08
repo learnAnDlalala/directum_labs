@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\6hLecture\6hLecture.csproj" />
     <ProjectReference Include="..\8thLecture\8thLecture.csproj" />
-    <ProjectReference Include="..\Task5\6h lecture.csproj" />
   </ItemGroup>
 
   <ItemGroup>

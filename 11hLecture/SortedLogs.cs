@@ -25,9 +25,9 @@
         public void GetSortedLog(DateTime date)
         {
             var dateString = date.ToString("dd.MM.yyyy");
-            var data = from t in this.content
+            var data = from t in this.content           // Хорошо, но лучше сделать через методы расширения. Такой синтаксис почти не используют.
                        where t.StartsWith(dateString)
-                       orderby t.Substring(0, 19)
+                       orderby t.Substring(0, 19)       // Всё же лучше сортировать не по строкам, а приводить в дате-времени.
                        select t;
             foreach (var s in data)
             {
