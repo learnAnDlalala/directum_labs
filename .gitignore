@@ -50,12 +50,10 @@ x64/
 *.tlh
 *.tmp
 *.tmp_proj
-*.log
 *.vspscc
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # OS generated files #
