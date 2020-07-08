@@ -42,7 +42,7 @@
                 for (int j = 1; j < 10; j++)
                 {
                     row++;
-                    worksSheet.Cells[row, "A"] = i;
+                    worksSheet.Cells[row, "A"] = i;                 // Довольно странное представление таблицы умножения.
                     worksSheet.Cells[row, "B"] = j;
                     worksSheet.Cells[row, "C"] = i * j;
                 }
