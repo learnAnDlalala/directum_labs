@@ -15,7 +15,7 @@
         /// <param name="args">can be empty</param>
         public static void Main(string[] args)
         {
-           // Console.WriteLine(GetMax("a", "b", "c"));
+            Console.WriteLine(GetMax("a", "b", "c"));
             Perebor();
             TextList test = new TextList(@".\testfor8.txt");
             foreach (string a in test)
@@ -41,7 +41,7 @@
         /// <summary>
         /// Метод показывающий реализацию foreach
         /// </summary>
-        public static void Perebor()
+        public static void Perebor()          // Eto eIILe 4To Takoe?
         {
             List<int> testList = new List<int> { 1, 2, 3, 4 };
             testList.Add(5);
