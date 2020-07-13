@@ -1,7 +1,7 @@
 ﻿namespace _12hLecture
 {
     using System;
-    using System.Globalization;
+    using System.Globalization; // Лишний using.
     using System.Reflection;
     using System.Resources;
     using System.Windows;
@@ -17,7 +17,7 @@
         public MainWindow()
         {
             this.Initialized += this.WindowInitilized;
-            InitializeComponent();
+            InitializeComponent();  // StyleCop.
         }
 
         /// <summary>
@@ -36,7 +36,7 @@
         /// </summary>
         /// <param name="sender">object отправитель</param>
         /// <param name="e">аргумент события</param>
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e) // StyleCop.
         {
             MessageBox.Show(TextMessages.HelloMessage);
         }
