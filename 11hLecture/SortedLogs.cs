@@ -2,6 +2,7 @@
 {
     using System;
     using System.Linq;
+    using System.Text.RegularExpressions;
     using _8thLecture;
 
     /// <summary>
@@ -25,14 +26,21 @@
         public void GetSortedLog(DateTime date)
         {
             var dateString = date.ToString("dd.MM.yyyy");
-            var data = from t in this.content           // Хорошо, но лучше сделать через методы расширения. Такой синтаксис почти не используют.
-                       where t.StartsWith(dateString)
-                       orderby t.Substring(0, 19)       // Всё же лучше сортировать не по строкам, а приводить в дате-времени.
-                       select t;
+            var data = this.content.Where(t => t.StartsWith(dateString)).OrderBy(t => GetTime(t)).Select(t => t);
             foreach (var s in data)
             {
                 Console.WriteLine(s);
             }
+        }
+        
+        /// <summary>
+        /// Метод получения времени
+        /// </summary>
+        /// <param name="logLine">строка лога</param>
+        /// <returns> Время лога</returns>
+        public static DateTime GetTime(string logLine)
+        {
+            return DateTime.ParseExact(Regex.Match(logLine, @"\d?\d{1}:\d{2}:\d{2}").Value, "HH:mm:ss", null);
         }
     }
 }
