@@ -26,7 +26,10 @@
         public void GetSortedLog(DateTime date)
         {
             var dateString = date.ToString("dd.MM.yyyy");
-            var data = this.content.Where(t => t.StartsWith(dateString)).OrderBy(t => GetTime(t)).Select(t => t);
+            var data = this.content
+                .Where(t => t.StartsWith(dateString))
+                .OrderBy(t => GetTime(t))
+                .Select(t => t);  // Зачем?
             foreach (var s in data)
             {
                 Console.WriteLine(s);
