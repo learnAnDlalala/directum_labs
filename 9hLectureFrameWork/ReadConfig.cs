@@ -1,6 +1,6 @@
 ﻿namespace _9hLecture
 {
-    using System;
+    using System;   // Лишний using.
     using System.Configuration;
 
     /// <summary>

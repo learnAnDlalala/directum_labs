@@ -69,9 +69,7 @@
     <Compile Include="ConfigCollection.cs" />
     <Compile Include="ConfigElement.cs" />
     <Compile Include="MyTestClass.cs" />
-    <Compile Include="Program.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadConfig.cs" />
   </ItemGroup>

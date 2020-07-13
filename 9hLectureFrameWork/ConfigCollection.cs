@@ -22,7 +22,7 @@
         /// </summary>
         /// <param name="el">элемент конфигурации</param>
         /// <returns>ключ элемента</returns>
-        protected override object GetElementKey(ConfigurationElement el)
+        protected override object GetElementKey(ConfigurationElement el)  // Плохое название параметра.
         {
             return ((ConfigElement)el).MySettingKey;
         }
